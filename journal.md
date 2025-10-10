@@ -23,5 +23,22 @@ Revision des commandes et méthode pour se déplacer dans l'arborescence.
   Decouverte des commandes git (clone,status,commit (-m), config,fetch,add ...)
 
 ###Exercice2
-  Creation du depot PPE1-2025, personel et création du fichier journal.md (copie du journal existant dans un autre dépot).
+ Creation du depot PPE1-2025, personel et création du fichier journal.md (copie du journal existant dans un autre dépot).
 
+##SEMAINE DU 06/10 - 12/10
+ Découverte de la façon de créer des scripts en bash, de la façon d'ajouter des arguments et de les executers.
+
+###Exercice 1, 2, 3 de Scripts en bash
+ Pour verifier si les arguments ne son pas vide, faire une boucle if ;then ;else; fi avec l'option -n et exit si l'argument est vide.
+
+  PROBLEMES SURVENU
+  Difficulté à faire en sorte que l'argument pour mois et année soit * (pour selectionner plusieurs fichiers)
+  Tentative a faire pour resoudre le problem. Utiliser une boucle while ou for pour iterer sur tout les fichiers. Conclusion, pas besoin de faire une boucle, juste besoin de combiner les arguments pour en faire un chemin utilisable. 
+  
+ NOTES 
+  sort -n -> trie selon numérique -nr -> numerique reverse
+  cut -f{num} -> permet de recup juste la colonne voulu, si on en veut plusieurs faire  -f{num1}-{num2}, prendre tt les colonne entre les deux.
+  tail -n{nb_ligne} -> permet de recup x ligne en partant de la fin (à combiner avec un sort -nr pour ordonner du plsu grand au plus petit)
+  uniq -c -> permet de compter le nb d'occurence et les ajoute sans faire de répétition.
+  cat peut prendre plusieur fichier et tout lire d'un coup, pas besoin d'iterer.
+  Les arguments sont a affecter à  une variable après pas directement (argument numéroter)
