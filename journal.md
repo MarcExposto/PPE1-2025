@@ -36,7 +36,7 @@ Revision des commandes et méthode pour se déplacer dans l'arborescence.<br />
   Tentative a faire pour resoudre le problem. Utiliser une boucle while ou for pour iterer sur tout les fichiers.<br />
   (Conclusion, pas besoin de faire une boucle, juste besoin de combiner les arguments pour en faire un chemin utilisable.)<br />
   
- NOTES<br />
+ ***NOTES***<br />
   sort -n -> trie selon numérique -nr -> numerique reverse<br />
   cut -f{num} -> permet de recup juste la colonne voulu, si on en veut plusieurs faire  -f{num1}-{num2}, prendre tt les colonne entre les deux.<br />
   tail -n{nb_ligne} -> permet de recup x ligne en partant de la fin (à combiner avec un sort -nr pour ordonner du plsu grand au plus petit)<br />
@@ -78,6 +78,30 @@ Revision des commandes et méthode pour se déplacer dans l'arborescence.<br />
 <br />
  NOTES: <br />
  read argument -r -> permet de faire que \ suivis d'un caractère ne soit pas considérer comme un tabulation ou un séparateur. <br />
- [[ ARGUMENT =∼ ^ https ?:// ]] -> =~ pour dire que c'est une expression regulière | ^ pour dire que c'est le début de la ligne | ? pour dire que le s final n'est pas obligatoire mais peut être présent  | :// car ça doit être à la suite.
+ [[ ARGUMENT =∼ ^ https ?:// ]] -> =~ pour dire que c'est une expression regulière | ^ pour dire que c'est le début de la ligne | ? pour dire que le s final n'est pas obligatoire mais peut être présent  | :// car ça doit être à la suite. <br />
+
+##SEMAINE DU 20/10 - 26/10
+
+ Decouverte de Lynx (moteur web sur terminal), de cURL et wget. Réalisation du mini projet.<br />
+
+ **Exercice Mini Projet**
+
+ EXERCICE 1:
+
+ 1. On n'utilise read plutot que cat car cat va tout lire en 1 seule fois tantdis que read vas tout lire ligne par ligne et stocker le resultat dans une variable. Ce qui permet d'iterer sur chaque ligne et de faire des opérations.
+
+ 2. On rend l'argument obligatoire en vérifiant sa présences ou non grace à une boucle if et on le met dans une variable nommer pour pouvoir l'utilise plus facilement.
+
+ 3. On ajoute un compteur qui augemente à chaque tour de boucle et qui correspond au numéros de la ligne du document lu. Puis on l'ajoute au tableau avaant l'url.
+
+ ***PROBLEMES SURVENU***<br />
+  Réussir à recuperer juste la première ligne pour le code HTTP et aussi réussir à récuperer l'encodage. <br />
+  Dans le tableau l'url ne s'affichait plus apres avoir ajouter le code HTTP. -> eviter de refaire la commande avec cURL à chaque fois et plutot mettre le resultat dans une variable.<br />
+
+ ***NOTES***<br />
+  -e de echo -> permt de prendre les \t (tabulation) et \n (saut de ligne) comme non texte.<br />
+  Ajouter +1 à une varibale compteur -> ((i++)) (le plus moderne et plus utiliser), ((i += 1))<br />
+  tr -d '\r\n' -> retire avec -d les retrour a la ligne et les retour chariots si présent<br />
+
 
 
