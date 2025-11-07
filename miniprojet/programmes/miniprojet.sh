@@ -1,13 +1,14 @@
 MonUrl=$1
 
-if [ -n "$MonUrl" ] #verifie si il y a qqch dans l'argument avec -n
+if [ -n "$MonUrl" ] #verifie si il y a qqch dans l'argument avec -n #-ne pour dire si vide faire x
 then
 	compte=1
 	while read -r line; #lit ligne par ligne
 	do
-		lecture=$(curl -i -s "$line")
-		codeHTTP=$(echo "$lecture" | head -n 1 | tr -d '\r\n') #tr -d '\r\n' retire avec -d les retrour a la ligne et les retour chariots si présent
-		ligneEncodage=$(echo "$lecture" | grep -i "^Content-Type:" | tr -d '\r\n') #^ pour dire que c'est le debut du mot et -i pour ignorer casse
+		lecture=$(curl -i -s -L "$line") #-L pour redirection
+		codeHTTP=$(echo "$lecture" | head -n 1 | tr -d '\r\n' |cut -d ' ' -f 2 ) #tr -d '\r\n' retire avec -d les retrour a la ligne et les retour chariots si présent et apres garde que info en enlevant http/
+
+		ligneEncodage=$(echo "$lecture" | grep -E -o "charset=.*" |cut -d= -f2 |tr -d '\r\n' | cut -d'"' -f2 ) #recuper partie charset. Rajoute tr car sinon on a 2 fois l'info puis cut pour recuperer juste utf8 etc
 
 		#Pour verifier que les arguments ne sont pas vide et le preciser pour éviter un trou/décalage dans le tableau
 		if [ -n "$codeHTTP" ]

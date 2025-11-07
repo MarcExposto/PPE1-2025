@@ -103,5 +103,17 @@ Revision des commandes et méthode pour se déplacer dans l'arborescence.<br />
   Ajouter +1 à une varibale compteur -> ((i++)) (le plus moderne et plus utiliser), ((i += 1))<br />
   tr -d '\r\n' -> retire avec -d les retrour a la ligne et les retour chariots si présent<br />
 
+##Semaine du 03/11 - 09/11
+
+Correction du mini projet 1 en globale et découvertes des balises pour faire du html et des tableaux sous html <br />
+
+ **Exercice Mini Projet 2**
+
+ 1. Correction du mini projet 1 pour avoir le rendu voulu (version revu miniprojet 1).
+
+  ***NOTES***<br />
+ Ajout -L pour redirection et modification reglage des problèmes pour récuperer juste UTF-8 et le code HTTP sans HTTP/ devan avec tr et cut <br />
+
+
 
 
