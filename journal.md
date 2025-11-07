@@ -111,6 +111,8 @@ Correction du mini projet 1 en globale et découvertes des balises pour faire du
 
  1. Correction du mini projet 1 pour avoir le rendu voulu (version revu miniprojet 1).
 
+ 2. Mis à jours du script pour la création de mini projet 2 et implémentations des balise pour faire le tableau au format html.
+
   ***NOTES***<br />
  Ajout -L pour redirection et modification reglage des problèmes pour récuperer juste UTF-8 et le code HTTP sans HTTP/ devan avec tr et cut <br />
 
