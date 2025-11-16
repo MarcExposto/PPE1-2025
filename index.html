@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <title>Programmation et Projet encadré</title>
+</head>
+
+<body>
+    <section class="hero">
+        <div class="hero-body">
+            <p class="title is-3">Page initiale du PPE.</p>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+       <p> Le But du mini  projet est de comprendre comment fonctionne les différents outils qui seront utiliser lors du projet final. En partant du code ci dessous et en le modifiant on peut récuperer les information de la page tel l'encodage, le code HTTP et apres compter les mots. Puis faire une sortie sous forme de tableau en tsv.</p>
+
+     </div>
+
+     <div class="container mb-5">
+       <pre class="is-family-code"><code>
+while read -r line;
+do
+    echo ${line};
+done < "urls/fr.txt";
+    </code></pre>
+
+    </div>
+    <div class="container mb-5">
+        <p>
+            Il a ensuite fallu transformer le code pour que la sortie soit balisé et un tableau en html. Puis créer une page pour le github qui servira de présentation et deux pages une index et une avec les resultats trouvé sous forme de tableaux mis en page.
+        </p>
+
+    </div>
+    <div class="container mb-5">
+        <a href="miniprojet/tableaux/tableau-fra.html">
+        <button class="button is-medium is-info is-outlined is-focused">Liens resultats</button>
+        </a>
+    </div>
+
+
+
+</html>
