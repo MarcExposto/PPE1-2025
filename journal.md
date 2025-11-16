@@ -116,6 +116,10 @@ Correction du mini projet 1 en globale et découvertes des balises pour faire du
   ***NOTES***<br />
  Ajout -L pour redirection et modification reglage des problèmes pour récuperer juste UTF-8 et le code HTTP sans HTTP/ devan avec tr et cut <br />
 
+##Semaine du 10/11 - 16/11
 
+Decouverte de bulma et comment mettre sont github sous la forme d'une page. Correction mini projet 2 <br />
+Création d'une page index pour presenter le miniprojet et mise à jour du programme pour rendre le tableau sous un format html utilisant bulma. <br />
 
-
+  ***NOTES***<br />
+  Mettre ' ' au lieu de " " quand écrit avec echo pour les lignes qui demande de base " " dans la balise.
