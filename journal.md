@@ -123,3 +123,12 @@ Création d'une page index pour presenter le miniprojet et mise à jour du progr
 
   ***NOTES***<br />
   Mettre ' ' au lieu de " " quand écrit avec echo pour les lignes qui demande de base " " dans la balise.
+##Semaine du 17/11 - 23/11
+Correction du miniprojet 3 et comment utiliser les expressions régulières dans le cadre du projet.<br />
+
+##Semaine du 24/11 - 30/11
+Création d'un environement virtuel et comment l'activer, le desactiver et installer des packages pythons dedans. <br />
+Decouverte de l'outils pour faire des nuages de mots.<br />
+
+***NOTES PROJET***<br />
+On a decider qu'on choisir un neologisme mais pas encore excatement lequels et que je chercherais en anglais.<br />
