@@ -132,3 +132,13 @@ Decouverte de l'outils pour faire des nuages de mots.<br />
 
 ***NOTES PROJET***<br />
 On a decider qu'on choisir un neologisme mais pas encore excatement lequels et que je chercherais en anglais.<br />
+
+##Semaine du 01/12 - 07/12
+
+Debut du projet en groupe. Choix du mot et de deux hypothèses à explorer. Recherche à faire en anglais.<br />
+Mot: confiner<br />
+Hypothèses : <br />
+- Est-ce qu’on peut observer beaucoup de néologismes dans le contexte de ce mot ? (Dû à son emploi pendant la période du COVID)<br />
+- Est-ce que ces néologismes ont tendance à être des emprunts en persan et en français (respectivement de l’arabe et de l’anglais, et de l’anglais) ? <br />
+<br />
+Avec quelques lien sur le thème trouver en anglais j'ai fait plusieurs scripts utilisable pour nos 3 langues. J'ai fait 3 script, un qui met en forme les liens et information comme dans le mini projet en html, un qui extrait et met les pages en fichier texte pure et un qui utlise le concordancier fait et mis à jour par Lena Baraquin et les fichiers textes pure pour faire le tableau des concordances mis en html. <br />
